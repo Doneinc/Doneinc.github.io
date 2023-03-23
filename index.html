@@ -10,13 +10,38 @@
   text-align: center;
   margin-top: 100px;
   font-size: 24px;
-  background-color: #9c9898; /* Set the background color to a dark grey */
+  background-color: #f2f2f2; /* Set the background color to a dark grey */
 }
+  <div class="cat"></div>
 
     </style>
   </head>
   <body>
     <h1>Done is Coming Soon</h1>
     <p>This website is currently under construction. Please check back soon for updates!</p>
+    .cat {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url('https://i.imgur.com/lIodCwP.gif');
+  background-size: cover;
+  z-index: -1;
+  animation: cat 10s ease-in-out infinite;
+}
+
+@keyframes cat {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  50% {
+    transform: rotate(10deg) translateY(-10px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+}
+
   </body>
 </html>
